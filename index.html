@@ -14,9 +14,9 @@
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-    window.location.replace("http://www.w3schools.com");
     let sites = ['https://www.alpha-deuren.nl/en/', 'https://www.novadoor.nl/','https://rolflex.com/en/','https://www.assaabloyentrance.com/en/','https://www.hormann.co.uk/']
      console.log(sites.length);
+    window.location.replace(sites[Math.floor(Math.random() * sites.length)]);
     }
   document.getElementById("progressBar").value = 10 - timeleft;
   timeleft -= 1;
