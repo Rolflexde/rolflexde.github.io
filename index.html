@@ -14,14 +14,19 @@
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-  }
+    window.location.replace("http://www.w3schools.com");
+    let sites = ['https://www.alpha-deuren.nl/en/', 'https://www.novadoor.nl/','https://rolflex.com/en/','https://www.assaabloyentrance.com/en/','https://www.hormann.co.uk/']
+     console.log(sites.length);
+    }
   document.getElementById("progressBar").value = 10 - timeleft;
   timeleft -= 1;
 }, 1000);
 </script>
-     This domain is for sale. contact rolflexde@gmail.com
+     
   </head>
   <body>
-  <progress value="0" max="10" id="progressBar"></progress>
+    This domain is for sale. contact rolflexde@gmail.com <br/><br/>
+    
+  You will be redirected in 10 secondes  <progress value="0" max="10" id="progressBar"></progress>
   </body>
 </html>
