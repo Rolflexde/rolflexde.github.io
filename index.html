@@ -14,7 +14,7 @@
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-    let sites = ['https://www.alpha-deuren.nl/en/', 'https://www.novadoor.nl/','https://rolflex.com/en/','https://www.assaabloyentrance.com/en/','https://www.hormann.co.uk/'];
+    let sites = ['https://www.alpha-deuren.nl/en/', 'https://www.novadoor.nl/','https://www.labex.nl/','https://www.novoferm.nl/producten/industriedeuren/','https://www.assaabloyentrance.com/en/','https://www.hormann.co.uk/'];
     window.location.replace(sites[Math.floor(Math.random() * sites.length)]);
     }
   document.getElementById("progressBar").value = 10 - timeleft;
@@ -26,6 +26,6 @@ var downloadTimer = setInterval(function(){
   <body>
     <h1>This domain is for sale. contact rolflexde@gmail.com <br/><br/></h1>
     
-  You will be redirected in 10 secondes to a leading company <progress value="0" max="10" id="progressBar"></progress>
+  You will be redirected in 10 secondes to a random leading company <progress value="0" max="10" id="progressBar"></progress>
   </body>
 </html>
