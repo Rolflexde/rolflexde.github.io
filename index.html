@@ -14,11 +14,8 @@
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-<<<<<<< HEAD
-    let sites = ['https://www.rolflex.com'];
-=======
+
     let sites = ['https://www.alpha-deuren.nl/en/', 'https://www.novadoor.nl/','https://www.labex.nl/','https://www.novoferm.nl/producten/industriedeuren/','https://www.assaabloyentrance.com/en/','https://www.hormann.co.uk/'];
->>>>>>> parent of 533a73a (Update index.html)
     window.location.replace(sites[Math.floor(Math.random() * sites.length)]);
     }
   document.getElementById("progressBar").value = 10 - timeleft;
